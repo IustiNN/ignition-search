@@ -2,6 +2,7 @@
   "name": "ignition-search",
   "private": true,
   "dependencies": {
-    "bootstrap": "~4.0.0-alpha.6"
+    "bootstrap": "~4.0.0-alpha.6",
+    "slick-carousel": "^1.8.0"
   }
 }

@@ -1,4 +1,6 @@
 // bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
 
 .browserupgrade {
@@ -10,7 +12,7 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 1.5rem;
+  padding-top: 5rem;
   padding-bottom: 1.5rem;
 }
 

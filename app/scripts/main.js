@@ -1,1 +1,6 @@
-console.log('\'Allo \'Allo!');
+$(document).ready(function(){
+      $('.carousel').slick({
+        infinite: true,
+        dots: true
+      });
+    });
