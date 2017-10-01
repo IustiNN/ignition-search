@@ -1,4 +1,21 @@
+@import "variables.scss";
+
+canvas{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+#animation-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
 header.carousel {
+	figure {
+		margin: 0;
+	}
 	.slide-content {
 		position: absolute;
 		bottom: 100px;
@@ -42,6 +59,12 @@ header.carousel {
 	    	}
 	    }
 	}
+}
+
+
+section.intro {
+	background: $light-grey;
+	padding: 3rem 0;
 }
 
 .trusted-by-carousel {
