@@ -3,6 +3,8 @@
   "private": true,
   "dependencies": {
     "bootstrap": "~4.0.0-alpha.6",
-    "slick-carousel": "^1.8.0"
+    "slick-carousel": "^1.8.0",
+    "components-font-awesome": "^4.7.0",
+    "three.js": "threejs#*"
   }
 }

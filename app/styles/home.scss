@@ -1,0 +1,72 @@
+header.carousel {
+	.slide-content {
+		position: absolute;
+		bottom: 100px;
+		color: #fff;
+	}
+	.slick-next, .slick-prev {
+		display: none!important;
+	}
+	.slick-dots {
+		position: absolute;
+	    top: 50%;
+	    color: #fff;
+	    button {
+	    	background: none;
+	    	border: none;
+	    	font-size: 18px;
+	    	color: #fff;
+	    	font-family: 'Gilroy-Bold', sans-serif;
+	    	position: relative;
+	    	padding-left: 30px;
+	    	cursor: pointer;
+	    	opacity: .6;
+	    	&:before {
+	    		content: '';
+	    		height: 2px;
+	    		width: 15px;
+	    		background: #fff;
+	    		display: block;
+	    		position: absolute;
+	    		left: 0;
+	    		top: 50%;
+	    	}
+	    }
+	    li.slick-active {
+	    	button {
+	    		opacity: 1;
+	    		padding-left: 45px;
+	    		&:before {
+	    			width: 30px;
+	    		}
+	    	}
+	    }
+	}
+}
+
+.trusted-by-carousel {
+	li {
+		position: relative;
+		height: 100px;
+	}
+	img {
+		filter: grayscale(100%);
+    	opacity: .5;	
+		max-width: 150px;
+		padding: 0 15px;
+	    position: absolute;
+	    margin: auto;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	}
+
+}
+
+
+
+
+@media screen and (min-width: 48em) {
+
+}
