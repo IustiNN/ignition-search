@@ -1,8 +1,10 @@
 $(document).ready(function(){
 	$('header.carousel').slick({
 		infinite: true,
+		autoplay: true,
 		dots: true,
-		speed: 500,
+		speed: 800,
+		autoplaySpeed: 9000,
 	    fade: true,
 	    cssEase: 'linear'
 	});

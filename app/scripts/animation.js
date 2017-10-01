@@ -2,8 +2,6 @@
 
 // ThreeJs custom waves
 // Original script by ThreeJS : https://threejs.org/examples/canvas_particles_waves.html
-// Modified version for Cloudoru by Kevin Rajaram : http://kevinrajaram.com
-// Date: 08/14/2014
 
 
 //*/
