@@ -43,8 +43,19 @@ html, body, p {
 	font-family: Gilroy-Regular, sans-serif;
 }
 
+.bold {
+  font-family: 'Gilroy-Bold', sans-serif;
+}
+.bolder {
+  font-family: 'Gilroy-ExtraBold', sans-serif;
+}
+
 h1, h2, h3, h4, h5 { 
 	font-family: Gilroy-ExtraBold, sans-serif; 
 	font-weight: normal; 
 	font-style: normal; 
+}
+
+h6 {
+  font-size: 12px;
 }

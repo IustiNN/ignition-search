@@ -1,5 +1,7 @@
 @import "variables.scss";
-
+.navbar-brand img {
+	width: 200px;
+}
 canvas{
 	position: absolute;
 	top:0;
@@ -106,9 +108,128 @@ header.carousel {
   }
 
 
+
   section.intro {
   	background: $light-grey;
   	padding: 3rem 0;
+  	h6 {
+  		color: #858487;
+  	}
+  }
+
+  .case-studies {
+  	.service {
+  		color: #bfbfbf;
+  		strong {
+  			color: #34373d;
+  		}
+  	}
+  	.case-studies-carousel {
+  		padding: 0 45px;
+  	}
+  	.slick-next:before, .slick-prev:before {
+  		color: #34373d;
+  		border: 1px solid #34373d;
+  	}
+  	.slick-next:before {
+	    border-radius: 0 50% 50% 0;
+	    padding: 5px;
+  	}
+  	.slick-prev:before {
+	    border-radius: 50% 0 0 50%;
+	    padding: 5px;
+  	}
+
+
+/* Dots */
+.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    margin: 0 1px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 10px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 10px;
+    height: 10px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
   }
 
   .trusted-by-carousel {

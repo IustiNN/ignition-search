@@ -1,12 +1,21 @@
 .btn {
   font-family: Gilroy-Bold, sans-serif;
+  border-radius: 40px;
+  padding: 12px 30px;
+  font-size: 12px;
 }
 
 .btn-learn-more, .btn-learn-more:hover  {
   background: #fff;
-  border-radius: 40px;
   color: #34373d;
-  padding: 12px 30px;
-  font-size: 12px;
-  box-shadow: 1px 8px 20px rgba(0,0,0,.5);
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+}
+
+.btn-orange {
+  background: #fb4136;
+  color: #fff;
+  &:hover {
+    color: #fff;
+    box-shadow: 1px 8px 20px rgba(0,0,0,.5);
+  }
 }

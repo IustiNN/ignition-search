@@ -3,13 +3,20 @@ ul {
 	list-style: none;
 }
  * {
-    outline: none;
+    outline: none!important;
  }
 //Space out content a bit 
 body {
   padding-bottom: 1.5rem;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+strong {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
 
 // carousel
 
@@ -47,9 +54,22 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.slick-next {
+    right: 0;
+}
+.slick-prev {
+    left: 0;
+}
 .slick-next:before {
     content: '→';
 }
 .slick-prev:before {
     content: '←';
+}
+
+.small-grey-text, .small-grey-text:hover {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #bfbfbf;
+    text-decoration: none;
 }

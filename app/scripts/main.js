@@ -23,7 +23,6 @@ $(document).ready(function(){
 	});
 
 	$('.trusted-by-carousel').slick({
-		infinite: true,
 		slidesToShow: 6,
 		slidesToScroll: 3,
 		responsive: [
@@ -31,8 +30,7 @@ $(document).ready(function(){
 		      breakpoint: 1024,
 		      settings: {
 		        slidesToShow: 4,
-		        slidesToScroll: 3,
-		        infinite: true
+		        slidesToScroll: 3
 		      }
 		    },
 		    {
