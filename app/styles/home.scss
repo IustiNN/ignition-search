@@ -105,7 +105,7 @@ header.carousel {
     		}
     	}
     }
-  }
+}
 
 
 
@@ -132,129 +132,136 @@ header.carousel {
   		border: 1px solid #34373d;
   	}
   	.slick-next:before {
-	    border-radius: 0 50% 50% 0;
-	    padding: 5px;
+  		border-radius: 0 50% 50% 0;
+  		padding: 5px;
   	}
   	.slick-prev:before {
-	    border-radius: 50% 0 0 50%;
-	    padding: 5px;
+  		border-radius: 50% 0 0 50%;
+  		padding: 5px;
   	}
 
 
 /* Dots */
 .slick-slider
 {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .slick-dots
 {
-    position: absolute;
-    bottom: 25px;
+	position: absolute;
+	bottom: 25px;
 
-    display: block;
+	display: block;
 
-    width: 100%;
-    padding: 0;
+	width: 100%;
+	padding: 0;
 
-    list-style: none;
+	list-style: none;
 
-    text-align: center;
+	text-align: center;
 }
 .slick-dots li
 {
-    position: relative;
+	position: relative;
 
-    display: inline-block;
+	display: inline-block;
 
-    width: 10px;
-    height: 10px;
-    margin: 0 1px;
-    padding: 0;
+	width: 10px;
+	height: 10px;
+	margin: 0 1px;
+	padding: 0;
 
-    cursor: pointer;
+	cursor: pointer;
 }
 .slick-dots li button
 {
-    font-size: 0;
-    line-height: 0;
+	font-size: 0;
+	line-height: 0;
 
-    display: block;
+	display: block;
 
-    width: 10px;
-    height: 10px;
-    padding: 5px;
+	width: 10px;
+	height: 10px;
+	padding: 5px;
 
-    cursor: pointer;
+	cursor: pointer;
 
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
 {
-    outline: none;
+	outline: none;
 }
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
-    opacity: 1;
+	opacity: 1;
 }
 .slick-dots li button:before
 {
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 10px;
+	font-family: 'slick';
+	font-size: 20px;
+	line-height: 10px;
 
-    position: absolute;
-    top: 0;
-    left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 
-    width: 10px;
-    height: 10px;
+	width: 10px;
+	height: 10px;
 
-    content: '•';
-    text-align: center;
+	content: '•';
+	text-align: center;
 
-    opacity: .25;
-    color: black;
+	opacity: .25;
+	color: black;
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+	opacity: .75;
+	color: black;
 }
 
-  }
+}
 
-  .trusted-by-carousel {
-  	li {
-  		position: relative;
-  		height: 100px;
-  	}
-  	img {
-  		filter: grayscale(100%);
-  		opacity: .5;	
-  		max-width: 150px;
-  		padding: 0 15px;
-  		position: absolute;
-  		margin: auto;
-  		top: 0;
-  		left: 0;
-  		right: 0;
-  		bottom: 0;
-  	}
+.trusted-by-carousel {
+	li {
+		position: relative;
+		height: 100px;
+	}
+	img {
+		filter: grayscale(100%);
+		opacity: .5;	
+		max-width: 150px;
+		padding: 0 15px;
+		position: absolute;
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
 
-  }
-
-
+}
 
 
-  @media screen and (min-width: 48em) {
+section.contact {
+	background: #34373e;
+	.contact-info {
+		color: #fff;
+	}
+}
 
-  }
+
+
+@media screen and (min-width: 48em) {
+
+}
