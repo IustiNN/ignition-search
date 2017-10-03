@@ -62,7 +62,15 @@
 
       <header class="carousel">
         <div class="content-seo">
-          <figure><img class="img-fluid" src="images/home/home_1.jpg" alt=""></figure>
+          <svg width="1920" height="1080" viewBox="0 0 1920 1080">
+            <defs>
+              <mask id="hero-mask">
+                <image width="1920" height="1080" xlink:href="images/mask.png"/>
+              </mask>
+            </defs>
+            <image mask="url(#hero-mask)" width="1920" height="1080" xlink:href="images/hero1.jpg"/>
+          </svg>
+          <!-- <figure><img class="img-fluid" src="images/home/home_1.jpg" alt=""></figure> -->
           <div class="container">
             <div class="slide-content">
               <h2>Search Engine Optimisation</h2>
