@@ -1,4 +1,17 @@
 $(document).ready(function(){
+
+	$(window).scroll(function() {
+	    var height = $(window).scrollTop();
+
+	    if(height  > 100) {
+	        $('nav.navbar').addClass('solid'); 	
+	        $('nav.navbar .mobile').removeClass('ml-auto'); 	
+	    } else {
+	    	$('nav.navbar').removeClass('solid');
+	        $('nav.navbar .mobile').addClass('ml-auto'); 	
+	    }
+	});
+
 	$('header.carousel').slick({
 		infinite: true,
 		autoplay: true,
