@@ -1,6 +1,11 @@
+@import "variables.scss";
+
 ul {
 	padding: 0;
 	list-style: none;
+}
+p {
+    font-size: 18px;
 }
  * {
     outline: none!important;
@@ -16,6 +21,11 @@ body {
 
 strong {
     font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.list-inline li {
+    display: inline-block;
+    padding-right: 10px;
 }
 
 // carousel
@@ -68,8 +78,24 @@ strong {
 }
 
 .small-grey-text, .small-grey-text:hover {
-    font-size: 12px;
+    font-size: 13px;
     text-transform: uppercase;
     color: #bfbfbf;
     text-decoration: none;
+}
+
+a.fa {
+    color: #fff;
+}
+
+.one-line {
+    margin-bottom: 0;
+}
+
+.form-control:focus {
+    border-color: $orange;
+}
+
+h2 {
+    font-size: 3rem;
 }

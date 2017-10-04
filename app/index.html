@@ -62,6 +62,7 @@
 
       <header class="carousel">
         <div class="content-seo">
+        <!-- 
           <svg width="1920" height="1080" viewBox="0 0 1920 1080">
             <defs>
               <mask id="hero-mask">
@@ -69,8 +70,8 @@
               </mask>
             </defs>
             <image mask="url(#hero-mask)" width="1920" height="1080" xlink:href="images/hero1.jpg"/>
-          </svg>
-          <!-- <figure><img class="img-fluid" src="images/home/home_1.jpg" alt=""></figure> -->
+          </svg> -->
+          <figure><img class="img-fluid" src="images/home/home_1.jpg" alt=""></figure>
           <div class="container">
             <div class="slide-content">
               <h2>Search Engine Optimisation</h2>
@@ -105,14 +106,19 @@
       </header>
       <!-- header -->
 
-      <section class="intro text-center row justify-content-md-center" id="intro">
+      <section class="intro text-center" id="intro">
         <div id="animation"></div>
-        <div class="col-xs-12 col-md-6">
-          <h6 class="bold uppercase">Introducing ignition search </h6>
-          <h2>Performance Agency</h2>
-          <p>We help businesses grow their revenue, sales enquiries and customer base through high quality internet marketing services. </p>
-          <a href="/about.html" class="btn mr-2 btn-orange">Learn more about us</a><a href="/contact.html" class="btn btn-orange">Get in touch</a>
-          <a href="/portfolio.html" class="d-block mt-5 small-grey-text latest-work uppercase">View latest work</a>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-xs-12 col-md-6">
+            <h6 class="bold uppercase">Introducing ignition search </h6>
+            <h2>Performance Agency</h2>
+            <p>We help businesses grow their revenue, sales enquiries and customer base through high quality internet marketing services. </p>
+            <a href="/about.html" class="btn mr-2 btn-orange">Learn more about us</a><a href="/contact.html" class="btn btn-orange">Get in touch</a>
+            <a href="/portfolio.html" class="d-block mt-5 small-grey-text latest-work uppercase">View latest work</a>
+          </div>
+          </div>
+          
         </div>
       </section>
       <!-- intro -->
@@ -129,7 +135,7 @@
                 </div>
               <div class="col-xs-12 col-sm-6">
                 <h6 class="client small-grey-text">Origin global</h6>
-                <h2 class="case-title">Driving the business forward following a complex Google penalty </h2>
+                <h3 class="case-title">Driving the business forward following a complex Google penalty </h3>
                 <p class="service"><strong>Project services: </strong>Search Engine Optimization</p>
                 <a href="/case.html" class="btn btn-orange clear">View case study</a>
               </div>
@@ -143,7 +149,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-6">
                   <h6 class="client small-grey-text">PRETTY GREEN</h6>
-                  <h2 class="case-title">£1 million return from £45k spend. </h2>
+                  <h3 class="case-title">£1 million return from £45k spend. </h3>
                   <p class="service"><strong>Project services: </strong>PPC, CRO</p>
                   <a href="/case.html" class="btn btn-orange clear">View case study</a>
                 </div>
@@ -167,20 +173,20 @@
         </div>
       </section>
       <!-- case-studies -->
-      <section class="contact">
+      <section class="contact pb-0">
         <h2 class="fade-out">Contact</h2>
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-md-5 contact-info">
               <h2>Get in touch</h2>
               <div class="col-xs-6">
-                <span class="grey uppercase">Office address</span>
+                <span class="small-grey-text">Office address</span>
                 <p class="one-line">Ignition Search,</p>
                 <p class="one-line">The Triangle 1, Burton</p>
                 <p class="one-line">Road, Sheffield, S3 8BW</p>
               </div>
               <div class="col-xs-6">
-                <span class="grey uppercase">Socials</span>
+                <span class="small-grey-text">Socials</span>
                 <ul class="social-media list-inline">
                   <li><a href="#" class="fa fa-facebook"></a></li>
                   <li><a href="#" class="fa fa-twitter"></a></li>
@@ -189,13 +195,13 @@
                 </ul>
               </div>
               <div class="col-xs-6">
-                <span class="grey uppercase">Contact details</span>
+                <span class="small-grey-text">Contact details</span>
                 <p class="one-line red-line">0114 272 2444</p>
                 <p class="one-line red-line">info@ignitionsearch.co.uk</p>
               </div>
             </div>
             <div class="col-xs-12 col-md-7">
-              <div class="contact-form">
+              <div class="contact-form clearfix">
                 <form action="#">
                   <div class="form-row">
                     <div class="form-group col-xs-12 col-sm-6">
@@ -221,7 +227,7 @@
                     <label class="col-form-label" for="message">Message</label>
                     <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="What can we help you with?"></textarea>
                   </div>
-                  <button class="btn btn-submit" type="submit">Submit Message</button>
+                  <button class="btn btn-submit btn-white pull-right" type="submit">Submit Message</button>
                 </form>
               </div>
             </div>

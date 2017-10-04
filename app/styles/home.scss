@@ -15,6 +15,10 @@ canvas{
 	z-index: 1;
 }
 header.carousel {
+	figure img {
+		height: 100vh;
+		object-fit: cover;
+	}
 
 	@keyframes scale-x-zero-to-max {
 		0% {
@@ -72,7 +76,10 @@ header.carousel {
     }
     .slick-dots {
     	position: absolute;
-    	top: 50%;
+    	top: 35%;
+    	@media screen and (min-width: 1024px) {
+    		top: 50%;
+    	}
     	color: #fff;
     	button {
     		background: none;
@@ -124,7 +131,7 @@ header.carousel {
   			color: #34373d;
   		}
   	}
-  	.case-studies-carousel {
+  	.case-studies-carousel, .trusted-by-carousel {
   		padding: 0 45px;
   	}
   	.slick-next:before, .slick-prev:before {
@@ -140,6 +147,14 @@ header.carousel {
   		padding: 5px;
   	}
 
+.trusted-by-carousel {
+	.slick-next:before, .slick-prev:before {
+		border: none;
+	}
+	img {
+		width: 100%;
+	}
+}
 
 /* Dots */
 .slick-slider
@@ -252,15 +267,59 @@ header.carousel {
 
 }
 
-
+section, footer {
+	position: relative;
+	padding: 50px 0;
+}
 section.contact {
 	background: #34373e;
-	.contact-info {
+		.contact-info {
 		color: #fff;
+	}
+	.small-grey-text {
+		margin-bottom: 15px;
+		margin-top: 15px;
+		display: inline-block;
+	}
+	.fade-out  {
+		color: #33333b;
+	    font-size: 120px;
+	    position: absolute;
+	    top: 10%;
+	}
+	.contact-form {
+		background: #f9f9f9;
+    	padding: 25px 15px;
+    	position: relative;
+    	margin-top: 20px;
+    	z-index: 999;
+    	transform: translateY(70px);
+		label, input, textarea {
+			color: #363739;
+		}
+		input {
+			width: 100%;
+			border-radius: 100px;
+		}
 	}
 }
 
-
+footer {
+	padding-top: 100px;
+	.social-media {
+		margin: 50px 0;
+		
+	}
+	a, a.fa, a:hover {
+			color: #000;
+		}
+	.footer-menu {
+		margin-top: 50px;
+		@media screen and (min-width: 1024px) {
+			margin-top: 0;
+		}
+	}
+}
 
 @media screen and (min-width: 48em) {
 
