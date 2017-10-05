@@ -1,3 +1,4 @@
+@import 'variables.scss';
 .navbar {
 	ul.navbar-nav {
 		display: none;
@@ -21,12 +22,14 @@
 	}
 	a.menu-link {
 		color: #fff;
-	    width: 50px;
-	    height: 50px;
+	    width: 65px;
+	    height: 65px;
+	    position: relative;
 	    text-align: center;
-	    background: orange;
-	    line-height: 50px;
-	    border-radius: 50px;
+	    background: $orange;
+	    line-height: 65px;
+        border-radius: 65px 0 0 65px;
+	    right: -15px;
 	}
 
 	&.solid {
