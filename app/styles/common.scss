@@ -19,6 +19,14 @@ body {
     text-transform: uppercase;
 }
 
+.p-absolute {
+    position: absolute;
+}
+
+img.cover {
+    width: 100vw;
+    height: 100vh;
+}
 strong {
     font-family: 'Gilroy-Bold', sans-serif;
 }
@@ -26,6 +34,12 @@ strong {
 .list-inline li {
     display: inline-block;
     padding-right: 10px;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 // carousel
