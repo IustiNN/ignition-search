@@ -1,0 +1,26 @@
+@import "variables.scss";
+.pagination {
+  .page-link {
+    border-color: transparent;
+    color: $text;
+    font-family: 'Gilroy-Bold', sans-serif;
+  }
+  .page-item:last-child {
+    margin-left: 15px;
+    .page-link {
+      border-radius: 0 50% 50% 0;
+      border: 1px solid $dark-grey;
+    }
+  } 
+  .page-item:first-child {
+    margin-right: 15px;
+    .page-link {
+      border-radius: 50% 0 0 50%;
+      border: 1px solid $dark-grey;
+    }
+  } 
+  .page-item.active .page-link {
+    background-color: $orange;
+    border-color: $orange;
+  }
+}

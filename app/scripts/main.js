@@ -5,11 +5,29 @@ $(document).ready(function(){
 
 	    if(height  > 100) {
 	        $('nav.navbar').addClass('solid'); 	
-	        $('nav.navbar .mobile').removeClass('ml-auto'); 	
+	        // $('nav.navbar .mobile').removeClass('ml-auto'); 	
 	    } else {
 	    	$('nav.navbar').removeClass('solid');
-	        $('nav.navbar .mobile').addClass('ml-auto'); 	
+	        // $('nav.navbar .mobile').addClass('ml-auto'); 	
 	    }
+	});
+
+	function scrollToAnchor(aid){
+	    var aTag = $("#"+ aid);
+	    console.log(aTag);
+	    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+	}
+
+	$('.goto-seo').on('click', function(event) {
+		scrollToAnchor('seo');
+	});
+
+	$('.goto-ppc').on('click', function(event) {
+		scrollToAnchor('ppc');
+	});
+
+	$('.goto-cro').on('click', function(event) {
+		scrollToAnchor('cro');
 	});
 
 	$('header.carousel').slick({

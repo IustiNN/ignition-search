@@ -1,0 +1,32 @@
+@import "variables.scss";
+.case-study {
+  .charts {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  h3 {
+    margin-bottom: 30px;
+  }
+ section ul {
+    margin-bottom: 50px;
+    padding-left: 50px;
+    list-style-type: disc;
+    li {
+      margin-bottom: 20px;
+    }
+  }
+  .center-images {
+    align-items: center;
+    > div {
+      text-align: center;
+      margin: 35px 0;
+    }
+  }
+  .case-examples {
+    padding-top: 0;
+  }
+
+  .pleasures {
+    background: $light-grey;
+  }
+}

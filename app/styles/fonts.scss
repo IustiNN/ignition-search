@@ -36,7 +36,9 @@
   
 @font-face {font-family: 'Gilroy-Bold';src: url('../webfonts/34B62E_2_0.eot');src: url('../webfonts/34B62E_2_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/34B62E_2_0.woff2') format('woff2'),url('../webfonts/34B62E_2_0.woff') format('woff'),url('../webfonts/34B62E_2_0.ttf') format('truetype');}
 
-
+body {
+  color: #34373d;
+}
 html, body, p {
 	font-family: Gilroy-Regular, sans-serif;
 }
@@ -56,6 +58,9 @@ h1, h2, h3, h4, h5 {
 
 section:not(.contact) p {
   color: #444548;
+}
+h1 {
+  font-size: 60px;
 }
 
 h2 {
