@@ -14,6 +14,11 @@ canvas{
 	bottom: 0;
 	z-index: 1;
 }
+header {
+  figure {
+    margin: 0;
+  }
+}
 header.carousel {
 	figure img {
 		height: 100vh;
@@ -271,11 +276,13 @@ header.carousel {
 
 section, footer {
 	position: relative;
-	padding: 50px 0;
+	padding: 100px 0;
 }
 section.contact {
+  padding-top: 0;
 	background: #34373e;
 		.contact-info {
+      padding-top: 100px;
 		color: #fff;
 	}
 	.small-grey-text {
@@ -285,7 +292,7 @@ section.contact {
 	}
 	.fade-out  {
 		color: #33333b;
-	    font-size: 120px;
+	    font-size: 100px;
 	    position: absolute;
 	    top: 10%;
 	    @media screen and (min-width: 1024px) {
@@ -294,15 +301,18 @@ section.contact {
 	}
 	.contact-form {
 		background: #f9f9f9;
-    	padding: 25px 15px;
+    	padding: 30px 25px;
     	position: relative;
     	margin-top: 20px;
     	z-index: 999;
     	transform: translateY(70px);
-		label, input, textarea {
+		label, input, textarea, select {
 			color: #363739;
 		}
-		input {
+    select {
+      appearance: none;
+    }
+		input, select {
 			width: 100%;
 			border-radius: 100px;
 		}
@@ -313,11 +323,13 @@ footer {
 	padding-top: 100px;
 	.social-media {
 		margin: 50px 0;
-		
 	}
 	a, a.fa, a:hover {
 			color: #000;
 		}
+  h2 {
+    margin-top: 3rem;
+  }
 	.footer-menu {
 		margin-top: 50px;
 		@media screen and (min-width: 1024px) {

@@ -19,3 +19,19 @@
     box-shadow: 1px 8px 20px rgba(0,0,0,.5);
   }
 }
+
+.btn-transparent {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px;
+  .with-content {
+    display: none;
+  }
+  &:hover {
+    .with-content {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+}

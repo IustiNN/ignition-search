@@ -1,0 +1,59 @@
+@import "variables.scss";
+.contact-page {
+  header {
+    .bg-black {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: rgba(0,0,0,.6);
+    }
+    img {
+      height: 70vh;
+      width: 100%;
+      object-fit: cover;
+    }
+    .contact-content {
+      h2 {
+        margin-bottom: 25px;
+        margin-top: 25px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .container {
+      top: 15%;
+      padding-left: 10%;
+      color: #fff;
+    }
+    .breadcrumbs {
+      text-transform: uppercase;
+      .arrow {
+        margin: 0 5px;
+      }
+    }
+  }
+  .contact {
+    a.fa {
+      color: $text;
+    }
+    .contact-info {
+      color: $text;
+      padding-left: 50px;
+    }
+    background: #fff;
+    .contact-form {
+      background: #fff;
+    }
+    .container {
+      background: #fff;
+      transform: translateY(-100px);
+      box-shadow: 0px -205px 50px 4px rgba(121, 120, 120, 0.1);
+    }
+    
+  }
+
+  footer {
+    padding-top: 0;
+  }
+}

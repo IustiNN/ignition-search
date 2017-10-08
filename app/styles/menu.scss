@@ -1,5 +1,6 @@
 @import 'variables.scss';
 .navbar {
+	padding-right: 50px;
 	ul.navbar-nav {
 		display: none;
 		a {
@@ -25,21 +26,22 @@
 	}
 	a.menu-link {
 		color: #fff;
-	    width: 65px;
-	    height: 65px;
-	    position: absolute;
-	    text-align: center;
-	    background: $orange;
-	    line-height: 65px;
-        border-radius: 65px 0 0 65px;
-	    right: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    background: $orange;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 65px 0 0 65px;
+    right: 0;
 	}
 
 	&.solid {
 		background: #34373D;
 		ul.navbar-nav {
 			@media screen and (min-width: 1024px) {
-				display: flex;
+				display: block;
 			}
 
 			a {
