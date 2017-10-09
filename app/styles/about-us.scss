@@ -1,0 +1,76 @@
+@import "variables.scss";
+.about-us {
+  .content {
+    padding: 10vh 15px;
+  }
+  h2 {
+    color: $text;
+    margin: 15px 0;
+  }
+  .fixed-nav {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: rotate(270deg);
+    transform-origin: left;
+    z-index: 99;
+    left: 40px;
+    a {
+      color: $text;
+      opacity: .5;
+      font-family: 'Gilroy-Bold', sans-serif;
+      text-transform: uppercase;
+      &:hover {
+        opacity: 1;
+        text-decoration: none;
+        &:after {
+          content: ' ';
+          display: block;
+          position: relative;
+          width: 20px;
+          left: 50%;
+          height: 2px;
+          background: $orange;
+          transform: translateX(-20px);
+        }
+      }
+    }
+  }
+  .certificates-column {
+    padding-top: 10vh;
+    position: relative;
+    text-align: center;
+    background: #46484d;
+  }
+  .certificates {
+    position: absolute;
+    top: 50%;
+    &:first-child {
+      left: 0;
+      transform: rotate(270deg);
+    }
+
+    &:last-child {
+      right: 0;
+      transform: rotate(90deg);
+    }
+  }
+  .certificates-list {
+    img {
+      width: 250px;
+      height: auto;
+
+      margin: 25px 0 ;
+    }
+  }
+
+  .why {
+    h3 {
+      margin: 15px 0;
+    }
+  }
+
+  .offset-top{
+    transform: translateY(-50px);
+  }
+}

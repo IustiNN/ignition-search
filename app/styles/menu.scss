@@ -77,11 +77,14 @@
 			}
 			a.mobile {
 				color: #fff;
+				&:hover {
+					color: #fff;
+				}
 			}
 		}
 		ul.navbar-nav {
 			@media screen and (min-width: 1024px) {
-				display: block;
+				// display: block;
 				a {
 					color: $text;
 				}
