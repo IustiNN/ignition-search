@@ -1,18 +1,18 @@
 function createDonutCharts() {
-    $("<style type='text/css' id='dynamic' />").appendTo("head");
-    $("div[chart-type*=donut]").each(function () {
+    $('<style type=\'text/css\' id=\'dynamic\' />').appendTo('head');
+    $('div[chart-type*=donut]').each(function () {
         var d = $(this);
         var id = $(this).attr('id');
         var max = $(this).data('chart-max');
         if ($(this).data('chart-text')) {
             var text = $(this).data('chart-text');
         } else {
-            var text = "";
+            var text = '';
         }
         if ($(this).data('chart-caption')) {
             var caption = $(this).data('chart-caption');
         } else {
-            var caption = "";
+            var caption = '';
         }
         if ($(this).data('chart-initial-rotate')) {
             var rotate = $(this).data('chart-initial-rotate');
@@ -31,12 +31,12 @@ function createDonutCharts() {
             } else {
                 d.append('<div class="donut-bite" data-segment-index="' + i + '"> ');
             }
-            var style = $("#dynamic").text() + "#" + id + " .donut-bite[data-segment-index=\"" + i + "\"]{-moz-transform:rotate(" + start + "deg);-ms-transform:rotate(" + start + "deg);-webkit-transform:rotate(" + start + "deg);-o-transform:rotate(" + start + "deg);transform:rotate(" + start + "deg);}#" + id + " .donut-bite[data-segment-index=\"" + i + "\"]:BEFORE{-moz-transform:rotate(" + deg + "deg);-ms-transform:rotate(" + deg + "deg);-webkit-transform:rotate(" + deg + "deg);-o-transform:rotate(" + deg + "deg);transform:rotate(" + deg + "deg); background-color: " + s[2] + ";}#" + id + " .donut-bite[data-segment-index=\"" + i + "\"]:BEFORE{ background-color: " + s[2] + ";}#" + id + " .donut-bite[data-segment-index=\"" + i + "\"].large:AFTER{ background-color: " + s[2] + ";}";
-            $("#dynamic").text(style);
+            var style = $('#dynamic').text() + '#' + id + ' .donut-bite[data-segment-index="' + i + '"]{-moz-transform:rotate(' + start + 'deg);-ms-transform:rotate(' + start + 'deg);-webkit-transform:rotate(' + start + 'deg);-o-transform:rotate(' + start + 'deg);transform:rotate(' + start + 'deg);}#' + id + ' .donut-bite[data-segment-index="' + i + '"]:BEFORE{-moz-transform:rotate(' + deg + 'deg);-ms-transform:rotate(' + deg + 'deg);-webkit-transform:rotate(' + deg + 'deg);-o-transform:rotate(' + deg + 'deg);transform:rotate(' + deg + 'deg); background-color: ' + s[2] + ';}#' + id + ' .donut-bite[data-segment-index="' + i + '"]:BEFORE{ background-color: ' + s[2] + ';}#' + id + ' .donut-bite[data-segment-index="' + i + '"].large:AFTER{ background-color: ' + s[2] + ';}';
+            $('#dynamic').text(style);
         }
 
-        d.children().first().before("<div class='donut-hole'><span class='donut-filling'>" + text + "</span></div>");
-        d.append("<div class='donut-caption-wrapper'><span class='donut-caption'>" + caption + "</span></div>");
+        d.children().first().before('<div class=\'donut-hole\'><span class=\'donut-filling\'>' + text + '</span></div>');
+        d.append('<div class=\'donut-caption-wrapper\'><span class=\'donut-caption\'>' + caption + '</span></div>');
     });
 }
 
