@@ -1,5 +1,22 @@
 $(document).ready(function(){
 
+  $('header.carousel').slick({
+    infinite: true,
+    autoplay: true,
+    dots: true,
+    speed: 800,
+    autoplaySpeed: 9000,
+      fade: true,
+      cssEase: 'linear'
+  });
+  $('#slick-slide-control00').text('SEO');
+  $('#slick-slide-control01').text('PPC');
+  $('#slick-slide-control02').text('CRO');
+
+  
+
+  createDonutCharts();
+
 	$(window).scroll(function() {
 	    var height = $(window).scrollTop();
 
@@ -12,12 +29,6 @@ $(document).ready(function(){
 	    }
 	});
 
-	function scrollToAnchor(aid){
-	    var aTag = $('#'+ aid);
-	    console.log(aTag);
-	    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-	}
-
 	$('.goto-seo').on('click', function(event) {
 		scrollToAnchor('seo');
 	});
@@ -26,22 +37,18 @@ $(document).ready(function(){
 		scrollToAnchor('ppc');
 	});
 
-	$('.goto-cro').on('click', function(event) {
-		scrollToAnchor('cro');
+  $('.goto-cro').on('click', function(event) {
+    scrollToAnchor('cro');
+  });
+
+	$('a').on('click', function(event) {
+    if ($(this).text() === 'Get in touch') {
+      event.preventDefault();
+  		scrollTo('contact');
+    }
 	});
 
-	$('header.carousel').slick({
-		infinite: true,
-		autoplay: true,
-		dots: true,
-		speed: 800,
-		autoplaySpeed: 9000,
-	    fade: true,
-	    cssEase: 'linear'
-	});
-	$('#slick-slide-control00').text('SEO');
-	$('#slick-slide-control01').text('PPC');
-	$('#slick-slide-control02').text('CRO');
+	
 
 	$('.btn-next-service').on('click', function(event) {
 		event.preventDefault();
@@ -87,6 +94,17 @@ $(document).ready(function(){
 	$('.trusted-by-carousel img').css('filter', 'grayscale(100%)');
 });
 
+function scrollToAnchor(aid){
+      var aTag = $('#'+ aid);
+      $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+  }
+
+function scrollTo(elem){
+    var item = $('.'+ elem);
+    console.log(item);
+    $('html,body').animate({scrollTop: item.offset().top},'slow');
+}
+
 
 
 function createDonutCharts() {
@@ -130,33 +148,3 @@ function createDonutCharts() {
         d.append('<div class=\'donut-caption-wrapper\'><span class=\'donut-caption\'>' + caption + '</span></div>');
     });
 }
-
-$(document).ready(function() {
-    createDonutCharts();
-});
-
-
-$(document).ready(function() {
-  // init Isotope
-  var $grid = $('.services-to-filter').isotope({
-    // options
-    itemSelector: '.service-item',
-    layoutMode: 'fitRows'
-  });
-  // filter items on button click
-  $('.filter-services').on( 'click', 'a', function() {
-    $('.offset-top').removeClass('offset-top');
-    var filterValue = $(this).attr('data-filter');
-    console.log(filterValue);
-    $grid.isotope({ filter: filterValue });
-  });
-
-  // change is-checked class on buttons
-  $('.filter-services').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'a', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
-    });
-  });
-});

@@ -3,9 +3,11 @@
   .content {
     padding: 10vh 15px;
   }
-  h2 {
+  header {
+    h2 {
     color: $text;
     margin: 15px 0;
+    }
   }
   .fixed-nav {
     position: fixed;
@@ -72,5 +74,16 @@
 
   .offset-top{
     transform: translateY(-50px);
+  }
+
+  .team-member {
+    .description {
+      height: 100px;
+    }
+    // &:hover {
+    //   .description {
+    //     height: auto;
+    //   }
+    // }
   }
 }
