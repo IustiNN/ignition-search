@@ -9,9 +9,9 @@ $(document).ready(function(){
       fade: true,
       cssEase: 'linear'
   });
-  $('#slick-slide-control00').text('SEO');
-  $('#slick-slide-control01').text('PPC');
-  $('#slick-slide-control02').text('CRO');
+  $('header #slick-slide-control00').text('SEO');
+  $('header #slick-slide-control01').text('PPC');
+  $('header #slick-slide-control02').text('CRO');
 
   
 
