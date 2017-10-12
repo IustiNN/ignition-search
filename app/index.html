@@ -40,6 +40,26 @@
           </li>
         </ul>
         <a class="mobile bold d-none ml-auto" tel="#">0114 272 2444</a>
+        <div class="sidenav">
+          <button type="button" class="close menu-link" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services.html">Our Services</a></li>
+            <li><a href="/work.html">Our Work</a></li>
+            <li><a href="/about-us.html">About Us</a></li>
+            <li><a href="/agencies.html">Agencies</a></li>
+            <li><a href="/advice-center.html">Advice Center</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+          </ul>
+          <ul class="social-media list-inline">
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+          </ul>
+        </div>
         <a href="#" class="menu-link fa fa-bars"></a>
       </nav>
 
@@ -59,7 +79,7 @@
             <div class="slide-content">
               <h2>Search Engine Optimisation</h2>
               <p><strong>Grow your brand oganically.</strong> Give your customers expert content and increase Google visibility.</p>
-              <a href="/services.html" class="btn btn-learn-more">Learn more about SEO</a>
+              <a href="/service.html" class="btn btn-learn-more">Learn more about SEO</a>
               <a href="#" class="btn btn-next-service">Next Service ⟶</a>
             </div>
           </div>
@@ -70,7 +90,7 @@
             <div class="slide-content">
               <h2>Pay Per Click</h2>
               <p><strong>Delivering customers instantly.</strong>  Bring targeted visitors each day, every day. </p>
-              <a href="/seo.html" class="btn btn-learn-more">Learn more about PPC</a>
+              <a href="/service.html" class="btn btn-learn-more">Learn more about PPC</a>
               <a href="#" class="btn btn-next-service">Next Service ⟶</a>
             </div>
           </div>
@@ -81,7 +101,7 @@
             <div class="slide-content">
               <h2>Conversion Rate Optimisation</h2>
               <p><strong>A better, not bigger, spend.</strong> Drive healthier results and increase your bottom line.</p>
-              <a href="/seo.html" class="btn btn-learn-more">Learn more about CRO</a>
+              <a href="/service.html" class="btn btn-learn-more">Learn more about CRO</a>
               <a href="#" class="btn btn-next-service">Next Service ⟶</a>
             </div>
           </div>
@@ -186,15 +206,15 @@
             </div>
             <div class="col-xs-12 col-md-7">
               <div class="contact-form clearfix">
-                <form action="#">
+                <form method="POST" action="https://formspree.io/iustin.nitza@gmail.com">
                   <div class="form-row">
                     <div class="form-group col-xs-12 col-sm-6">
                       <label class="col-form-label" for="name">Full Name*</label>
-                      <input class="form-control" type="text" id="name" placeholder="John Doe">
+                      <input class="form-control" name="name" type="text" id="name" placeholder="John Doe">
                     </div>
                     <div class="form-group col-xs-12 col-sm-6">
                       <label class="col-form-label" for="email">Email Address*</label>
-                      <input class="form-control" type="email" placeholder="hello@example.com" id="email">
+                      <input class="form-control" type="email" name="_replyto" placeholder="hello@example.com" id="email">
                     </div>
                   </div>
                   <div class="form-row">
@@ -281,7 +301,6 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/popper.js/dist/umd/popper.js"></script>
     <script src="/bower_components/slick-carousel/slick/slick.js"></script>
-    <script src="/bower_components/three.js/build/three.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

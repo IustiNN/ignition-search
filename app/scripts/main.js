@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+	$('.menu-link').on('click', function(event) {
+		event.preventDefault();
+		var menu = $('.navbar .sidenav')
+		if(menu.hasClass('open')) {
+			menu.removeClass('open');
+		} else {
+			menu.addClass('open');
+		}
+	});
+
   $('header.carousel').slick({
     infinite: true,
     autoplay: true,
@@ -174,7 +184,6 @@ function init() {
 	}
 
 	renderer = new THREE.CanvasRenderer();
-	console.log(container.outerWidth);
 	renderer.setSize( 1300, 770 );
 	renderer.setClearColor( 0xf9f9f9, 1);
 	container.appendChild( renderer.domElement );
@@ -222,7 +231,7 @@ function render() {
 	renderer.render( scene, camera );
 
 	// This increases or decreases speed
-	count += 0.3;
+	count += 0.175;
 
 }
 
