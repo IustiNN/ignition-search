@@ -26,6 +26,7 @@
 		float: left;
 	}
 	a.mobile {
+		display: none!important;
 		margin: 0 1rem;
 		color: #fff;
 		font-size: 2rem;
@@ -55,9 +56,14 @@
 				display: block;
 			}
 		}
+		@media screen and (min-width: 600px) {
+			a.mobile {
+				display: block!important;
+			}
+		}
 		background: #34373D;
 		ul.navbar-nav {
-			@media screen and (min-width: 1024px) {
+			@media screen and (min-width: 1224px) {
 				display: block;
 			}
 
@@ -68,9 +74,6 @@
 	}
 
 	&.white-menu {
-		a.mobile {
-					color: $text;
-				}
 		.navbar-brand {
 			display: none;
 		}
