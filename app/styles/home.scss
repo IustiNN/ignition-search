@@ -2,17 +2,21 @@
 .navbar-brand img {
 	width: 200px;
 }
-canvas{
+
+#animation {
 	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+canvas{
+	// position: absolute;
 	top:0;
+	margin-top: -300px;
+	width: 100%!important;
 	left:0;
 	z-index:1;
-}
-#animation-container {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	z-index: 1;
 }
 header {
   figure {
