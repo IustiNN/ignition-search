@@ -225,6 +225,14 @@ h3 {
 header h2 {
     color: #fff;
 }
+.social-media a {
+    padding: 5px;
+}
+.social-media a:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+    transition: transform .3s ease;
+}
 
 header .scroll-for-more {
     position: absolute;

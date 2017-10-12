@@ -125,6 +125,15 @@
 		    	width: 350px;
 				}
 	    }
+	    a.fa {
+	    	color: $text;
+	    }
+
+	    .social-media {
+	    	position: absolute;
+	    	left: 50px;
+	    	bottom: 80px;
+	    }
 	}
 
 	button.menu-link {
@@ -175,7 +184,7 @@
 	}
 
 	/* When you mouse over the navigation links, change their color */
-	.sidenav a:hover, .offcanvas a:focus{
+	.sidenav .nav-links a:hover, .offcanvas a:focus{
 	    color: $text;
 	    padding-left: 75px;
 	    &:before {
