@@ -1,6 +1,13 @@
 @import "variables.scss";
 .contact-page {
+  .select2-container--default .select2-selection--multiple {
+    border-radius: 15px;
+    border-color: rgba(0,0,0,.15);
+  }
   header {
+    .bg-black {
+      background: rgba(0,0,0,.7);
+    }
     img {
       height: 70vh;
       width: 100%;
@@ -49,5 +56,15 @@
 
   footer {
     padding-top: 0;
+  }
+
+  .small-logo {
+    position: relative;
+    top: -50px;
+  }
+  .small-logo-black {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }

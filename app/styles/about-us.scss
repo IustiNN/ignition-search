@@ -14,7 +14,7 @@
     @media screen and (min-width: 1024px) {
       display: block;
     }
-    position: fixed;
+    position: absolute;
     bottom: 250px;
     left: 0;
     transform: rotate(270deg);
@@ -137,6 +137,27 @@
       width: 450px;
       height: 500px;
     }
+    .testimonials-carousel {
+      .slick-next, .slick-prev{
+        top: auto;
+        left: auto;
+        bottom: 50px;
+      }
+      .slick-next {
+        right: 0;
+      }
+      .slick-prev {
+        right: 30px;
+      }
+
+      .slick-dots {
+        right: 60px;
+        display: inline-block;
+        left: auto;
+        bottom: 35px;
+        width: auto;
+      }
+    }
     .quote {
       opacity: .8;
       font-size: 24px;
@@ -150,7 +171,7 @@
     left: 50%;
     border-radius: 0 100px 0 0;
     background: #fff;
-    padding: 25px 150px 25px 50px;
+    padding: 25px 100px 25px 50px;
     transform: translate(0, -15px);
     }
   }

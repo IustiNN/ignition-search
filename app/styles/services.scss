@@ -1,7 +1,10 @@
 @import "variables.scss";
 .services-page {
+
   header .content {
     padding-top: 20vh;
+    background: $light-grey;
+    padding-bottom: 50px;
   }
   header h2 {
     color: $text;
@@ -12,7 +15,6 @@
   .scroll-more {
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 50px;
     span {
       position: relative;
       &:after {

@@ -149,7 +149,7 @@ function init() {
 	
 	var material = new THREE.SpriteCanvasMaterial( {
 
-		color: 0x939393, //changes color of particles
+		color: 0xcacaca, //changes color of particles
 		program: function ( context ) {
 
 			context.beginPath();
