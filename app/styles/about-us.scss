@@ -3,6 +3,12 @@
   .content {
     padding: 10vh 15px;
   }
+  .trusted-by-carousel{
+    margin-top: 100px;
+    .slick-prev:before, .slick-next:before {
+      color: $text;
+    }
+  }
   header {
     h2 {
     color: $text;
@@ -76,34 +82,6 @@
     }
   }
 
-  .offset-top{
-    transform: translateY(-50px);
-  }
-  .offset-top-200 {
-    margin-top: 200px;
-  }
-  .offset-top-150 {
-    margin-top: 150px;
-  }
-  .offset-top-100 {
-    margin-top: 100px;
-  }
-  .offset-top-50 {
-    margin-top: 50px;
-  }
-  .offset-bot-50 {
-    margin-top: -50px;
-  }
-  .offset-bot-100 {
-    margin-top: -100px;
-  }
-  .offset-bot-150 {
-    margin-top: -150px;
-  }
-  .offset-bot-200 {
-    margin-top: -200px;
-  }
-
   .team-member {
     h4 {
       margin-bottom: 0;
@@ -123,7 +101,7 @@
     transition: all .4s ease;
   }
   .team-member:hover .description{
-    height: 400px;
+    height: 500px;
     transition: all .4s ease;
   }
 
@@ -160,6 +138,7 @@
     }
     .quote {
       opacity: .8;
+      margin-top: -50px;
       font-size: 24px;
     }
     .testimonial-slide {
@@ -168,7 +147,7 @@
     .author {
       position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 30%;
     border-radius: 0 100px 0 0;
     background: #fff;
     padding: 25px 100px 25px 50px;
