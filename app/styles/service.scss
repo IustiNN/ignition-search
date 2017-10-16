@@ -1,5 +1,9 @@
 @import "variables.scss";
 .single-service {
+
+	section.intro p {
+		margin-top: 10px;
+	}
 	header {
 		color: #fff;
 		h1 {

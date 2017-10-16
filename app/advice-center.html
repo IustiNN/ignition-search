@@ -14,12 +14,8 @@
   <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
   <!-- endbower -->
   <!-- endbuild -->
-  <script src="/bower_components/three.js/build/three.min.js"></script>
-  <script src="/bower_components/three.js/build/three.module.js"></script>
-  <script src="scripts/projector-renderer.js"></script>
-  <script src="scripts/canvas-renderer.js"></script>
-  <script src="scripts/stats.js"></script>
-  <script src="scripts/animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
+
 
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -72,6 +68,7 @@
 
     <header>
       <div class="content">
+        <div id="animation"></div>
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -88,6 +85,7 @@
                   <a href="#" data-filter='.ppc' class="d-block">Pay Per Click</a>
                   <a href="#" data-filter='.cro' class="d-block">Conversion Rate Optimisation</a>
                   <a href="#" data-filter='.news' class="d-block">News &amp; Events</a>
+                  <a href="#" data-filter='*' class="d-block">Show all</a>
                 </div>
               </div>
 
@@ -102,68 +100,83 @@
     </header>
     <!-- header -->
 
-    <section>
+    <section class="articles-list">
       <div class="container">
         <div class="row services-to-filter">
           <div class="col-12 col-lg-6 service-item news">
-            <a href="#">
+            <a href="/exhibiting.html">
               <figure class="left"><div class="bg-black"></div>
-                <img src="images/case-studies/datatrack labs.jpg" alt="">
+                <img src="images/case-studies/datatrack-labs.jpg" alt="">
               </figure>
             </a>
             <div class="service-text">
-              <span class="small-grey-text">News &amp; Events | Posted 20.04.2017</span>
-              <h3>Celebrating 10 years of Ignition Search</h3>
-              <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quos officia excepturi placeat quis. Nihil veritatis adipisci, perspiciatis possimus cupiditate molestiae, nostrum recusandae voluptatum ad doloribus ullam, consequatur quos perferendis.</p>
-              <a href="#" class="btn btn-orange">Learn more</a>
+              <span class="small-grey-text">News &amp; Events | Posted 18.09.2017</span>
+              <h3>Exhibiting at the Northern eCommerce Show </h3>
+              <p class="description">We are proud to be part of eCommerce Show North: the most anticipated eCommerce expo of 2017!</p>
+              <a href="/exhibiting.html" class="btn btn-orange">Learn more</a>
             </div>
           </div>
-          <div class="col-12 col-lg-6 offset-top service-item ppc">
-            <a href="#"><figure class="right"><div class="bg-black"></div>
+          <div class="col-12 col-lg-6 offset-top service-item news">
+            <a href="/shortlisted-northern.html"><figure class="right"><div class="bg-black"></div>
               <img src="images/case-studies/pretty-green.jpg">
             </figure></a>
             <div class="service-text">
-              <span class="small-grey-text">Pretty green</span>
-              <h3>Becoming an authority within a competitive industry</h3>
-              <p><strong>Project services:</strong> Pay Per Click</p>
-              <a href="#" class="btn btn-orange">Learn more</a>
+              <span class="small-grey-text">News &amp; Events | Posted 4.09.2017</span>
+              <h3>Shortlisted at the Northern eCommerce Awards 2017 </h3>
+              <p class="description">Over the moon to have been nominated for Best eCommerce Search/Marketing Campaign, part of the Northern eCommerce awards 2017!</p>
+              <a href="/shortlisted-northern.html" class="btn btn-orange">Learn more</a>
             </div>
           </div>
-          <div class="col-12 col-lg-6 service-item seo">
+          <div class="col-12 col-lg-6 service-item seo ppc cro">
             <a href="#"><figure class="left"><div class="bg-black"></div>
               <img src="images/case-studies/russums.jpg" alt="">
             </figure></a>
             <div class="service-text">
-              <span class="small-grey-text">Health Aesthetics</span>
-              <h3>Delivering 130% increase year-on-year in organic traffic</h3>
-              <p><strong>Project services:</strong> Search Engine Optimisation</p>
+              <span class="small-grey-text">SEO, PPC, CRO | Posted 1.09.2017</span>
+              <h3>The impact of Digital Marketing in a Crowded Market </h3>
+              <p class="description">Case study: Negligence Claimline. It’s easy to forget about the most important people in a marketing strategy – your potential clients!</p>
               <a href="#" class="btn btn-orange">Learn more</a>
             </div>
           </div>
-          <div class="col-12 col-lg-6 service-item offset-top seo">
-            <a href="#"><figure class="right"><div class="bg-black"></div>
+          <div class="col-12 col-lg-6 service-item offset-top news">
+            <a href="/celebrating.html"><figure class="right"><div class="bg-black"></div>
               <img src="images/case-studies/CMD.jpg">
             </figure></a>
             <div class="service-text">
-              <span class="small-grey-text">CMD</span>
-              <h3>Creating the launching pad for an effortless web experience and customer-centric search engine optimisation</h3>
-              <p><strong>Project services:</strong> Search Engine Optimisation</p>
-              <a href="#" class="btn btn-orange">Learn more</a>
+              <span class="small-grey-text">News &amp; Events | Posted 20.04.2017</span>
+              <h3>Celebrating 10 years of Ignition Search! </h3>
+              <p class="description">Over the last 10 years we have moved, grown, achieved Premier Google Partner status, been nominated for our excellent results and so much more.</p>
+              <a href="/celebrating.html" class="btn btn-orange">Learn more</a>
             </div>
           </div>
-          <div class="col-12 col-lg-6 service-item seo ppc">
-            <a href="#"><figure class="left"><div class="bg-black"></div>
+          <div class="col-12 col-lg-6 service-item news">
+            <a href="/shortlisted-european.html"><figure class="left"><div class="bg-black"></div>
               <img src="images/case-studies/oarigin-global-bg.jpg" alt="">
             </figure></a>
             <div class="service-text">
-              <span class="small-grey-text">Origin global</span>
-              <h3>Delivering 130% increase year-on-year in organic traffic</h3>
-              <p><strong>Project services:</strong> Search Engine Optimisation, Pay Per Click</p>
-              <a href="#" class="btn btn-orange">Learn more</a>
+              <span class="small-grey-text">News &amp; Events | Posted 22.03.2017</span>
+              <h3>Ignition Search shortlisted at the European Search Awards 2-17 </h3>
+              <p class="description">We have been nominated in the prestigious international competition, The European Search Awards, for ‘Best Innovation Campaign’.</p>
+              <a href="/shortlisted-european.html" class="btn btn-orange">Learn more</a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 service-item offset-top seo ppc">
+            <a href="/drum.html"><figure class="right"><div class="bg-black"></div>
+              <img src="images/case-studies/oarigin-global-bg.jpg" alt="">
+            </figure></a>
+            <div class="service-text">
+              <span class="small-grey-text">News &amp; Events | Posted 16.05.2017</span>
+              <h3> We’re finalists in the Drum Search Awards 2016 </h3>
+              <p class="description">We have been nominated by an expert panel of digital experts for the prestigious Drum Search Awards for the ‘Best B2B Campaign – PPC’ award.</p>
+              <a href="/drum.html" class="btn btn-orange">Learn more</a>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
+    <section>
+      <div class="container">
         <div class="row justify-content-center pagination">
           <nav aria-label="Page navigation example">
             <ul class="pagination pagination-lg">

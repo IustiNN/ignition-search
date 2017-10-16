@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
   <!-- endbower -->
   <!-- endbuild -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
@@ -65,6 +67,7 @@
     <header>
       <div id="animation"></div>
       <div class="content">
+        <div id="animation"></div>
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-6">
@@ -80,6 +83,7 @@
                   <a href="#" data-filter='.seo' class="d-block">Search Engine Optimisation</a>
                   <a href="#" data-filter='.ppc' class="d-block">Pay Per Click</a>
                   <a href="#" data-filter='.cro' class="d-block">Conversion Rate Optimisation</a>
+                  <a href="#" data-filter='*' class="d-block">Show all</a>
                 </div>
               </div>
 
@@ -94,11 +98,11 @@
     </header>
     <!-- header -->
 
-    <section>
+    <section class="our-work-list">
       <div class="container">
         <div class="row services-to-filter">
           <div class="col-12 col-lg-6 service-item ppc">
-            <a href="#">
+            <a href="captain-cover.html">
               <figure class="left"><div class="bg-black"></div>
                 <img src="images/case-studies/captain-cover.jpg" alt="">
                 <figcaption><img class="img-fluid" src="images/logos/captain-cover.png" alt=""></figcaption>
@@ -106,57 +110,125 @@
             </a>
             <div class="service-text">
               <span class="small-grey-text">Captain Cover</span>
-              <h3>Driving the business forward following a complex Google penalty</h3>
+              <h3>162% increase in conversion rate. </h3>
               <p><strong>Project services:</strong> Pay Per Click</p>
-              <a href="#" class="btn btn-orange">Learn more</a>
+              <a href="captain-cover.html" class="btn btn-orange">Learn more</a>
             </div>
           </div>
-          <div class="col-12 col-lg-6 offset-top service-item ppc">
-            <a href="#"><figure class="right"><div class="bg-black"></div>
+          <div class="col-12 col-lg-6 offset-top service-item cro ppc">
+            <a href="/pretty-green.html"><figure class="right"><div class="bg-black"></div>
               <img src="images/case-studies/pretty-green.jpg">
               <figcaption><img class="img-fluid" src="images/logos/pretty-green.png" alt=""></figcaption>
             </figure></a>
             <div class="service-text">
               <span class="small-grey-text">Pretty green</span>
-              <h3>Becoming an authority within a competitive industry</h3>
-              <p><strong>Project services:</strong> Pay Per Click</p>
-              <a href="#" class="btn btn-orange">Learn more</a>
+              <h3>£1 million return from £45k spend. </h3>
+              <p><strong>Project services:</strong> PPC, CRO</p>
+              <a href="/pretty-green.html" class="btn btn-orange">Learn more</a>
             </div>
           </div>
           <div class="col-12 col-lg-6 service-item seo">
-            <a href="#"><figure class="left"><div class="bg-black"></div>
-              <img src="images/case-studies/russums.jpg" alt="">
-              <figcaption><img class="img-fluid" src="images/logos/health.png" alt=""></figcaption>
-            </figure></a>
-            <div class="service-text">
-              <span class="small-grey-text">Health Aesthetics</span>
-              <h3>Delivering 130% increase year-on-year in organic traffic</h3>
-              <p><strong>Project services:</strong> Search Engine Optimisation</p>
-              <a href="#" class="btn btn-orange">Learn more</a>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 service-item offset-top seo">
-            <a href="#"><figure class="right"><div class="bg-black"></div>
+            <a href="cmd.html"><figure class="left"><div class="bg-black"></div>
               <img src="images/case-studies/CMD.jpg">
               <figcaption><img class="img-fluid" src="images/logos/cmd.png" alt=""></figcaption>
             </figure></a>
             <div class="service-text">
               <span class="small-grey-text">CMD</span>
-              <h3>Creating the launching pad for an effortless web experience and customer-centric search engine optimisation</h3>
-              <p><strong>Project services:</strong> Search Engine Optimisation</p>
-              <a href="#" class="btn btn-orange">Learn more</a>
+              <h3>Maintaining and raising the company’s online profile throughout a rebranding process.</h3>
+              <p><strong>Project services:</strong> Search Engine Optimisation, PR</p>
+              <a href="cmd.html" class="btn btn-orange">Learn more</a>
             </div>
           </div>
-          <div class="col-12 col-lg-6 service-item seo ppc">
-            <a href="#"><figure class="left"><div class="bg-black"></div>
+
+          <div class="col-12 col-lg-6 service-item offset-top seo ppc">
+            <a href="/origin-global.html"><figure class="right"><div class="bg-black"></div>
               <img src="images/case-studies/oarigin-global-bg.jpg" alt="">
               <figcaption><img class="img-fluid" src="images/logos/origin-global.png" alt=""></figcaption>
             </figure></a>
             <div class="service-text">
               <span class="small-grey-text">Origin global</span>
-              <h3>Delivering 130% increase year-on-year in organic traffic</h3>
+              <h3>Driving the business forward following a complex Google penalty. </h3>
               <p><strong>Project services:</strong> Search Engine Optimisation, Pay Per Click</p>
-              <a href="#" class="btn btn-orange">Learn more</a>
+              <a href="/origin-global.html" class="btn btn-orange">Learn more</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 service-item seo ppc">
+            <a href="/jackson-woodturners.html"><figure class="left"><div class="bg-black"></div>
+              <img src="images/case-studies/jackson-woodturners.jpg" alt="">
+              <figcaption><img class="img-fluid" src="images/logos/origin-global.png" alt=""></figcaption>
+            </figure></a>
+            <div class="service-text">
+              <span class="small-grey-text">Jackson Woodturners </span>
+              <h3>ROI of £19.44 for every pound spent in AdWords. </h3>
+              <p><strong>Project services:</strong> Search Engine Optimisation, Pay Per Click</p>
+              <a href="/jackson-woodturners.html" class="btn btn-orange">Learn more</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 service-item offset-top seo ppc">
+            <a href="/kitlocker.html"><figure class="right"><div class="bg-black"></div>
+              <img src="images/case-studies/Kitlocker.jpg" alt="">
+              <figcaption><img class="img-fluid" src="images/logos/Kitlocker.jpg" alt=""></figcaption>
+            </figure></a>
+            <div class="service-text">
+              <span class="small-grey-text">Kitlocker </span>
+              <h3>286% increase in ecommerce revenue. </h3>
+              <p><strong>Project services:</strong> Search Engine Optimisation, Pay Per Click</p>
+              <a href="/kitlocker.html" class="btn btn-orange">Learn more</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 service-item seo ppc">
+            <a href="/russums.html"><figure class="left"><div class="bg-black"></div>
+              <img src="images/case-studies/russums.jpg" alt="">
+              <figcaption><img class="img-fluid" src="images/logos/russums.jpg" alt=""></figcaption>
+            </figure></a>
+            <div class="service-text">
+              <span class="small-grey-text">Russums  </span>
+              <h3>– Delivering 25% increase year – on – year in organic traffic. </h3>
+              <p><strong>Project services:</strong> Search Engine Optimisation, Pay Per Click</p>
+              <a href="/russums.html" class="btn btn-orange">Learn more</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 service-item offset-top seo ppc">
+            <a href="/datatrack-labs.html"><figure class="right"><div class="bg-black"></div>
+              <img src="images/case-studies/datatrack-labs.jpg" alt="">
+              <figcaption><img class="img-fluid" src="images/logos/origin-global.png" alt=""></figcaption>
+            </figure></a>
+            <div class="service-text">
+              <span class="small-grey-text">Datatrack Labs</span>
+              <h3>887.50% YOY increase in goal completions.</h3>
+              <p><strong>Project services:</strong> Search Engine Optimisation, Pay Per Click</p>
+              <a href="/datatrack-labs.html" class="btn btn-orange">Learn more</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 service-item ppc">
+            <a href="/abaris-international.html"><figure class="left"><div class="bg-black"></div>
+              <img src="images/case-studies/abaris.jpg" alt="">
+              <figcaption><img class="img-fluid" src="images/logos/origin-global.png" alt=""></figcaption>
+            </figure></a>
+            <div class="service-text">
+              <span class="small-grey-text">Abaris International </span>
+              <h3>ROI of £28.53 for every pound spent in AdWords.</h3>
+              <p><strong>Project services:</strong> Pay Per Click</p>
+              <a href="/abaris-international.html" class="btn btn-orange">Learn more</a>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-lg-6 service-item offset-top ppc">
+            <a href="/united-carpets.html"><figure class="right"><div class="bg-black"></div>
+              <img src="images/case-studies/russums.jpg" alt="">
+              <figcaption><img class="img-fluid" src="images/logos/health.png" alt=""></figcaption>
+            </figure></a>
+            <div class="service-text">
+              <span class="small-grey-text">United Carpets </span>
+              <h3>Increase conversions month on month by 150%.</h3>
+              <p><strong>Project services:</strong> Pay Per Click</p>
+              <a href="/united-carpets.html" class="btn btn-orange">Learn more</a>
             </div>
           </div>
         </div>

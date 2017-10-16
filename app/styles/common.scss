@@ -20,6 +20,19 @@ body {
   padding-bottom: 1.5rem;
 }
 
+.article {
+    ul {
+      list-style-type: none;
+      padding-left: 25px;
+    }
+
+    ul li:before {
+      content: '\2014';
+      position: absolute;
+      margin-left: -20px;
+    }
+}
+
 .grey {
     color: #858487;
 }
@@ -83,6 +96,11 @@ body {
         height: 1px;
         top: 13px;
         background: $orange;
+    }
+    &.grey {
+        &:before {
+            background: #cacaca;
+        }
     }
 }
 .btn:focus, .btn.focus {
@@ -212,6 +230,9 @@ h2 {
 
 .case-examples {
     padding-bottom: 0;
+    .bg-grey {
+        z-index: 8;
+    }
     .col-12 {
         overflow: hidden;
     }
@@ -231,6 +252,7 @@ h2 {
     .centered-absolute {
         position: absolute;
         top: 30%;
+        z-index: 9;
         color: #fff;
         width: 80%;
         left: 50%;
@@ -271,3 +293,35 @@ header .scroll-for-more {
     font-size: 9px;
     border-radius: 100% 0 0 0;
 }
+
+    
+    .row.with-offset {
+        padding: 65px 0;
+    }
+  .offset-top{
+    transform: translateY(-50px);
+  }
+  .offset-top-200 {
+    margin-top: 200px;
+  }
+  .offset-top-150 {
+    margin-top: 150px;
+  }
+  .offset-top-100 {
+    margin-top: 100px;
+  }
+  .offset-top-50 {
+    margin-top: 50px;
+  }
+  .offset-bot-50 {
+    margin-top: -50px;
+  }
+  .offset-bot-100 {
+    margin-top: -100px;
+  }
+  .offset-bot-150 {
+    margin-top: -150px;
+  }
+  .offset-bot-200 {
+    margin-top: -200px;
+  }
