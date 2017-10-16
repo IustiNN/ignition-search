@@ -8,6 +8,9 @@ p {
     font-size: 16px;
     line-height: 26px;
 }
+header {
+    position: relative;
+}
 * {
     outline: none!important;
 }
@@ -66,6 +69,11 @@ body {
 }
 .dash-before {
     padding-left: 35px;
+    &.grey {
+        &:before {
+            background: #cacaca;
+        }
+    }
     &:before {
         content: ' ';
         display: block;

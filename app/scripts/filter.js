@@ -17,8 +17,13 @@ $(document).ready(function() {
   $('.filter-services').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
     $buttonGroup.on( 'click', 'a', function() {
+
+      if($(this).hasClass('is-checked')) {
+
+      }
       $buttonGroup.find('.is-checked').removeClass('is-checked');
       $( this ).addClass('is-checked');
+      $(this).appendChild('span').text('x');
     });
   });
 });

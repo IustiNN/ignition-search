@@ -15,7 +15,7 @@
       display: block;
     }
     position: absolute;
-    bottom: 250px;
+    bottom: 80px;
     left: 0;
     transform: rotate(270deg);
     transform-origin: left;
@@ -24,7 +24,9 @@
     a {
       color: $text;
       opacity: .5;
-      font-family: 'Gilroy-Bold', sans-serif;
+      font-family: pill-gothic-600mg, sans-serif;
+      font-style: normal;
+      font-weight: 700;
       text-transform: uppercase;
       &:hover {
         opacity: 1;
@@ -141,6 +143,7 @@
       .slick-next, .slick-prev{
         top: auto;
         left: auto;
+        z-index: 99;
         bottom: 50px;
       }
       .slick-next {

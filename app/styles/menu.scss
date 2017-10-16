@@ -16,6 +16,37 @@
 		.nav-link {
 			padding-right: 1rem;
 			padding-left: 1rem;
+			position: relative;
+			display: inline-block;
+			margin: 15px 25px;
+			outline: none;
+			color: rgba(255,255,255, .7);
+			text-decoration: none;
+			letter-spacing: 1px;
+			text-shadow: 0 0 1px rgba(255,255,255,0.3);
+			// font-size: 1.35em;
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 1rem;
+				overflow: hidden;
+				padding: 8px 0;
+				max-width: 0;
+				border-bottom: 2px solid #fff;
+				color: #fff;
+				content: attr(data-hover);
+				-webkit-transition: max-width 0.5s;
+				-moz-transition: max-width 0.5s;
+				transition: max-width 0.5s;
+				white-space: nowrap;
+			}
+
+			&:hover, &:focus {
+				outline: none;
+				&:before {
+					max-width: 100%;
+				}
+			}
 		}
 	}
 
@@ -30,6 +61,10 @@
 		margin: 0 1rem;
 		color: #fff;
 		font-size: 2rem;
+		&:hover {
+			color: #fff;
+			cursor: pointer;
+		}
 	}
 	.menu-link {
 		color: #fff;
