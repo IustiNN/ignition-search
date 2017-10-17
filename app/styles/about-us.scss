@@ -107,6 +107,15 @@
     transition: all .4s ease;
   }
 
+  .testimonials-carousel {
+    .slick-dots {
+      position: static;
+    }
+    .slick-slide {
+      padding: 0 50px;
+    }
+  } 
+
   .testimonials {
     background: $grey;
     .testimonials-carousel img {

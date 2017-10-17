@@ -51,15 +51,15 @@ body {
     }
 }
 
-.testimonial {
+.testimonial, .testimonal-slide {
     background: $light-grey;
     padding: 50px 0;
-    p:first-child {
+    p:first-child, .quote {
         font-size: 26px;
         font-style: italic;
         &:before {
             color: $grey;
-            content: "“";
+            content: url("../images/comma-left.png");
             font-size: 50px;
             position: relative;
             left: -20px;
@@ -68,7 +68,7 @@ body {
         &:after {
             color: $grey;
             line-height: 30px;
-            content: "”";
+            content: url("../images/comma-right.png");
             font-size: 50px;
             position: relative;
             right: -20px;
