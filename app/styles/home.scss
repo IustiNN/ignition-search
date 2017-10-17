@@ -144,6 +144,33 @@ header.carousel {
   	}
   }
 
+  .case-studies {
+    .slick-slide {
+      .case-content .service:after {
+        background: #fb4136;
+
+        display: block;
+        content: "";
+
+        width: 100%;
+        height: 2px;
+        margin: 25px 0;
+
+        // position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 99;
+
+        transform: scaleX(0);
+        transform-origin: left 50%;
+      }
+
+      &.slick-active .case-content .service:after {
+          animation: scale-x-zero-to-max 9s linear .8s 1 forwards; // Note that 6s should be same as Slick's autoplaySpeed and .8s same as speed
+        }
+      }
+  }
+
   .case-studies, .testimonials-carousel {
   	.service {
   		color: #bfbfbf;
@@ -189,7 +216,7 @@ header.carousel {
 
 .slick-dots
 {
-	position: absolute;
+	// position: absolute;
 	bottom: 25px;
 
 	display: block;
