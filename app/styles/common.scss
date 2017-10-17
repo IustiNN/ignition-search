@@ -19,7 +19,9 @@ body {
     // padding-top: 90px;
   padding-bottom: 1.5rem;
 }
-
+button:hover {
+    cursor: pointer;
+}
 .article {
     ul {
       list-style-type: none;
