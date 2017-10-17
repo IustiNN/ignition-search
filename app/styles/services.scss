@@ -20,6 +20,9 @@
   .scroll-more {
     text-align: center;
     margin-top: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     span {
       position: relative;
       &:after {
@@ -28,7 +31,7 @@
         position: absolute;
         // top: 25px;
         left: 50%;
-        width: 1px;
+        width: 2px;
         height: 26px;
         background: #bfbfbf;
       }

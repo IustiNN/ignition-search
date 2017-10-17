@@ -15,6 +15,11 @@
       margin-bottom: 20px;
     }
   }
+  .pleasures ul {
+        display: inline-block;
+    list-style-type: disc;
+    text-align: left;
+  }
   .center-images {
     align-items: center;
     > div {
