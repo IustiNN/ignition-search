@@ -22,6 +22,12 @@ header {
   figure {
     margin: 0;
   }
+  h2 {
+    font-size: 30px;
+    @media screen and (min-width: 1024px) {
+      font-size: 48px;
+    }
+  }
 }
 header.carousel {
 	figure img {
@@ -87,7 +93,7 @@ header.carousel {
     }
     .slick-dots {
     	position: absolute;
-    	top: 35%;
+    	top: 20%;
     	@media screen and (min-width: 1024px) {
     		top: 50%;
     	}

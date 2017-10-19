@@ -56,14 +56,15 @@
 	.nav-item {
 		float: left;
 	}
-	a.mobile {
+	span.mobile {
 		display: none!important;
 		margin: 0 1rem;
 		color: #fff;
 		font-size: 2rem;
 		&:hover {
 			color: #fff;
-			cursor: pointer;
+			cursor: normal;
+			text-decoration: none;
 		}
 	}
 	.menu-link {
@@ -92,7 +93,7 @@
 			}
 		}
 		@media screen and (min-width: 600px) {
-			a.mobile {
+			span.mobile {
 				display: block!important;
 			}
 		}
@@ -116,7 +117,7 @@
 			ul.navbar-nav a {
 				color: #fff;
 			}
-			a.mobile {
+			span.mobile {
 				color: #fff;
 				&:hover {
 					color: #fff;
@@ -132,7 +133,7 @@
 			}
 		}
 		@media screen and (min-width: 1224px) {
-				a.mobile {
+				span.mobile {
 					display: block;
 				}
 			}
